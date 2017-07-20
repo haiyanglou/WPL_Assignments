@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PW-4</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+        <script>
+            var c1 = "($("#uname").val()== '') || ($("#pwd").val()== '') || ($("#phone").val()== '')";
+            var c2 = "($("#uname").val().length < '6') || ($("#pwd").val().length < '6')";
+            var c3 = "n=/[0-9]$/.test($("#phone").val())";
+        </script>
+        
+        <script>
+            $(document).ready(function(){
+                              
+                          $("#btn").click(function(){
+                            if (($("#uname").val()== '') || ($("#pwd").val()== '') || ($("#phone").val()== '')){
+                                          $("#p1").append(" <b>All fields are mandatory</b></br>");
+                                          }
+                            else if (($("#uname").val().length < '6') || ($("#pwd").val().length < '6')){
+                                        $("#p1").append(" <b>Username and password should be at least 6 characters</b></br>");
+                                          }
+                            else if (n=/[0-9]$/.test($("#phone").val())==false){
+                                          $("#p1").append(" <b>Phone number should include only numbers</b></br>");
+                                          }
+                                          
+                            else
+                                      $("#p2").append(" <b>Input Successful</b></br>");
+                                          
+                                          });
+                              });
+        </script>
+        
+        <style type="text/css">
+        
+        #p1 {
+            background-color: red;
+            color: white;
+        }
+        #p2 {
+            background-color: green;
+            color: black;
+        }
+        
+        </style>
+    </head>
+    
+    
+    <body>
+        <h1>Practice Work - 4</h1>
+        <div id="d1">
+            Username: <input id = "uname" type="text"><br>
+            Password: <input id = "pwd"  type="text" ><br>
+            Phone Number: <input id = "phone" type="text">
+        </div>
+        <button id = "btn">Validate</button>
+        <p id = "p1"></p>
+        <p id = "p2"></p>
+        <p> The conditions will be checked step by step, after one condition fills the requirement, the next will be checked: They are in the sequence like follows <br> 1. All fields are mandatory<br>2. Username and password should be at least 6 characters<br> 3. Phone number should include only numbers<br>Example: When 2nd and 3rd both don't fill the requirement, user must fill the 2nd requirement firstly, then the wrong message will be showed.</p>
+
+    </body>
+    
+</html>
+    
+

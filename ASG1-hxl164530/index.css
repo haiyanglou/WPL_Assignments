@@ -1,0 +1,49 @@
+h1 {
+    text-align: center;
+    font-size: 22pt;
+    font-weight: bold;
+    color: white;
+    background-color:grey;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    font-size: 14pt;
+    font-weight: bold;
+    color: white;
+    background-color:black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+div.col-sm-8 {
+    border-left: thick solid black;
+    border-right: thick solid black;
+
+}
+
+div.btn-group {
+    background-color: black;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.p1 {
+    font-family: Helvetica, Times New Roman, Arial, sans-serif;
+    font-size: 18pt;
+}
+
+.list {
+    font-size: 16pt;
+
+}
+
+a:hover {
+    color: grey;
+    background-color: transparent;
+    text-decoration: underline;
+}
+

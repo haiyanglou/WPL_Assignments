@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>PW-6</title>
+	<meta charset="utf-8">
+</head>
+
+<body>
+    <label style="color:red">* required field.</label>	
+
+    <form action="comments.php" method="get">
+    Name: 
+    <input type="text" name="name" required/>
+    <label style="color:red">*</label><br>
+    E-mail:  
+    <input type="email" name = "email" required/>
+    <label style="color:red">*</label><br>
+    Website: 
+    <input type="url" name="url" /><br>
+    Comments: 
+    <textarea rows="5" name=“comments”></textarea><br>
+    Gender: 
+    <input type="radio" name="gender" value="male" required/>Male
+    <input type="radio" name="gender" value="female" required/>Female
+    <label style="color:red">*</label><br>
+    <input type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>

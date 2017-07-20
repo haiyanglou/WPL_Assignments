@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	
+	<script src="validate.js" type="text/javascript"></script>
+	<link href="validate.css" type="text/css" rel="stylesheet" />
+	<title>Form Validation</title>
+</head>
+<body>
+	<h1>Form Validation</h1>
+	<form class="signup">
+		<table>
+			<tr>
+				<td><label for="username">Username:</label></td>
+				<td><input type="text" name="username" id="username"></td>
+			</tr>
+			<tr>
+				<td><label for="password">Password:</label></td>
+				<td><input type="password" name="password" id="password"></td>
+			</tr>
+			<tr>
+				<td><label for="email">Email:</label></td>
+				<td><input type="text" name="email" id="email"></td>
+			</tr>
+		</table>
+	</form>
+
+	<span id = "s1" class = "info">The username field must contain only alphabetical or numeric characters</span>
+    <span id = "s2" class = "info">The password field should be at least 8 characters long</span>
+    <span id = "s3" class = "info">The email field should be a valid email address</span>
+    <span id = "s4" class = "ok">OK</span>
+    <span id = "s6" class = "ok">OK</span>
+    <span id = "s7" class = "ok">OK</span>
+    <span id = "s5" class = "error">Error</span>
+    <span id = "s8" class = "error">Error</span>
+    <span id = "s9" class = "error">Error</span>
+
+
+</body>
+</html>
